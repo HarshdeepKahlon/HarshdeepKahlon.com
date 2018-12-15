@@ -3,7 +3,7 @@
             DON'T MIND THE MESS!
  -->
     <head>
-        <title>BuildCores App</title>
+        <title>Harshdeep | Scranton, PA</title>
              <!-- Global site tag (gtag.js) - Google Analytics -->
             <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124197690-1"></script>
             <script>
@@ -12,6 +12,7 @@
                  gtag('js', new Date());
                  gtag('config', 'UA-124197690-1');
             </script>
+        <link rel="icon" href="https://iconsplace.com/wp-content/uploads/_icons/800080/256/png/letter-h-icon-13-256.png">
     </head>
     <style>
         @import url('https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text');
@@ -19,118 +20,106 @@
         @import url('https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text|Open+Sans+Condensed:300|Press+Start+2P');
         #body {
             background: linear-gradient(rgb(250, 124, 124), purple);
+            -webkit-animation: bodyAnimation 3s ease;
         }
         #name {
             text-align: center;
             color: antiquewhite;
             font-family: "Helvetica";
-            font-weight: lighter;
-            font-size: 500%;
+            font-size: 220%;
+            -webkit-animation: nameAnimation 2s ease-in-out;
         }
 	    #about-me {
-        	text-align: left;
+        	text-align: center;
             font-family: "Helvetica";
 		font-size: 20px;
             color: antiquewhite;
 		text-decoration: underline;
 	    }
         #current {
-            text-align: left;
+            text-align: center;
             font-family: "Helvetica";
             color: antiquewhite;
         }
         #school {
             position: relative;
             bottom: 10px;
-            text-align: left;
+            text-align: center;
             font-family: "Helvetica";
             color: rgb(215, 206, 255);
         }
+        #description {
+            position: relative;
+            bottom: 10px;
+            text-align: center;
+            font-family: "Helvetica";
+            font-weight: lighter;
+            color: rgb(215, 206, 255);
+        }
+        #link {
+            color: rgb(215, 206, 255);
+            text-decoration: none;
+        }
+        a:hover, a::after {
+            background-color: rgb(238, 147, 147);
+            color: rgb(32, 27, 19);
+            text-decoration: underline;
+        }
         #languages {
-            text-align: left;
+            text-align: center;
             font-family: "Helvetica";
             color: antiquewhite;
         }
         #season {
-            color: rgb(255, 206, 232);
+            color: rgb(215, 206, 255);
             font-family: "Helvetica";
             text-align: center;
-            -webkit-animation: textAnimation 3s ease-in-out;
-        }
-        #credits {
-            color: rgb(255, 206, 232);
-            font-family: "Helvetica";
-            width: 40%;
-            text-align: left;
-            -webkit-animation: textAnimation 2s ease-in-out;
         }
         #coresLogo {
-            align-content: center;
-            border-radius: 30%;
-            width: 15%;
             display: block;
             margin-left: auto;
             margin-right: auto;
-            margin-top: 5%;
-            -webkit-animation: logoAnimation 3s ease-in-out;
+            border-radius: 30%;
+            width: 10%;
         }
-        #description {
-            color: rgb(255, 206, 232);
-            font-family: "Helvetica";
-            text-align: center;
-            margin-top: 5%;
-            -webkit-animation: descriptionAnimation 3s ease-in-out;
+        @-webkit-keyframes nameAnimation {
+            0% {opacity: 0;}
+            100% {opacity: 1;}
         }
-
-        @-webkit-keyframes logoAnimation {
-            0% {
-                width: 0%;
-                margin-top: 50%;
-            }
-            85% {
-                width: 25%
-            }
-            100% {
-                width: 15%;
-                margin-top: 5%;
-            }
-        }
-
-        @-webkit-keyframes textAnimation {
+        @-webkit-keyframes bodyAnimation {
             0% {
                 opacity: 0;
-                margin-top: -10%;
-            }
-            20% {
-                opacity: 0;
+                margin-top: -5%;
             }
             100% {
                 opacity: 1;
+                margin-top: 0.5%;
             }
         }
-        @-webkit-keyframes descriptionAnimation {
-            0% {
-                opacity: 0;
-                
-            }
-            85% {
-                opacity: 0;
-            }
-            100% {
-                opacity: 1;
-            }
-        }
-
-        
-
 
     </style>
+    <h1 id="name">Harshdeep Kahlon</h1>
     <body id="body">
-        <p id="credits">Designed and Developed by <b>Harshdeep Kahlon</b></p>
-        <h1 id="name">Build<b>Cores</b></h1>
-        <h2 id="season">PC Building for Everyone</h2>
-        <img id="coresLogo" src="CoresLogo3.jpg" alt="2018">
-        <h2 id="description">Available in Late December</h2>
+	<h2 id="season">harshdeep.kahlon@scranton.edu</h2>
+	<h2 id="season"><a href="https://github.com/HarshdeepKahlon" id="link" target="_blank">GitHub</a></h2>
+	<h2 id="season">December 2018</h2>
+    </br>
+    <h2 id="languages">Projects:</h2>
+    <img id="coresLogo" src="CoresLogo3.jpg" alt="2018">
+    <h3 id="school"><a  id= "link" href="http://www.buildcores.harshdeepkahlon.com/" target="_blank">BuildCores - A PC Building App for Everyone</a></h3>
+    <h4 id="description">December 2018 on the Apple App Store</h4>
+    <h3 id="school">Perplux</h3>
+    <h4 id="description">2019 on the Apple App Store</h4>
+	</br>
+    <h2 id="current">Currently attending: <h2 id="school">The University of Scranton</h2></h2>
+	<h4 id="school">Freshman Year | Current GPA: N/A | First Semester</h4>
+	<h4 id="school">Part of the Royal Scholars and Magis STEM Honors Program</h4>
+	</br>
+	<h2 id="languages">Languages and experience:</h2>
+		<h3 id="school">HTML and CSS</h3>
+		<h3 id="school">Swift 4.2</h3>
+		<h3 id="school">Java</h3>
+		<h3 id="school">JavaScript</h3>
     </body>
 </html>
 
