@@ -2,4 +2,3 @@
 
 ## My personal website using HTML/CSS
 
-## Future plans to utilize JavaScript
