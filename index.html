@@ -18,15 +18,16 @@
         @import url('https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text');
         @import url('https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text|Press+Start+2P');
         @import url('https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text|Open+Sans+Condensed:300|Press+Start+2P');
+        @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,100i,400,400i,700,700i');        
+
+
         #body {
-            background: linear-gradient(#f2709c, #ff9472);
-            -webkit-animation: bodyAnimation 3s ease;
-        }
+            background-image: radial-gradient( circle farthest-corner at -0.1% 100.8%,  rgba(0,234,255,1) 0.2%, rgba(0,124,255,1) 59.1%, rgba(198,0,255,1) 100.2% );      }
         #name {
             text-align: center;
             color: antiquewhite;
-            font-family: "Helvetica";
-            font-size: 220%;
+            font-family: "IBM Plex Sans", "Helvetica";
+            font-size: 300%;
             -webkit-animation: nameAnimation 2s ease-in-out;
         }
 	    #about-me {
@@ -35,18 +36,21 @@
 		font-size: 20px;
             color: antiquewhite;
 		text-decoration: underline;
+
 	    }
         #current {
             text-align: center;
             font-family: "Helvetica";
             color: antiquewhite;
+
         }
         #school {
             position: relative;
             bottom: 10px;
             text-align: center;
             font-family: "Helvetica";
-            color: rgb(215, 206, 255);
+            color: antiquewhite;
+
         }
         #description {
             position: relative;
@@ -54,10 +58,10 @@
             text-align: center;
             font-family: "Helvetica";
             font-weight: lighter;
-            color: rgb(215, 206, 255);
+            color: antiquewhite;
         }
         #link {
-            color: rgb(215, 206, 255);
+            color: antiquewhite;
             text-decoration: none;
         }
         a:hover, a::after {
@@ -71,9 +75,10 @@
             color: antiquewhite;
         }
         #season {
-            color: rgb(215, 206, 255);
+            color: antiquewhite;
             font-family: "Helvetica";
             text-align: center;
+            -webkit-animation: nameAnimation 2s ease-in-out;
         }
         #coresLogo {
             display: block;
@@ -82,6 +87,30 @@
             border-radius: 30%;
             width: 10%;
         }
+
+        #socialLogo {
+            display: table;
+            margin-right: auto;
+            margin-left: auto;
+            padding: 2%;
+            width: 30%;
+            -webkit-animation: beforeDivAnimation 2s ease-in-out;
+
+        }
+
+        #socialLogo a{
+            display: table-cell;
+            text-align: center;
+            width: 1%;
+
+        }
+
+        #socialLogo img{
+            width: 50%;
+            max-width: 70%;
+
+        }
+
         #scrantonLogo {
             display: block;
             margin-left: auto;
@@ -89,6 +118,34 @@
             margin-top: -1%;
             width: 10%;
         }
+
+        .divBackground {
+            display: block;
+            margin: auto;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background: rgba(255, 254, 254, 0.228);
+            border-radius: 0%;
+            filter: blur(0px);
+            width: 50%;
+            border-radius: 30px;
+            transform: scale(1.0);
+            -webkit-animation: beforeDivAnimation 2s ease-in-out;
+            
+        }
+
+        /*.divBackground:hover, .divBackground:active, .divBackground:focus {
+            display: block;
+            margin: auto;
+            padding-top: 5%;
+            padding-bottom: 5%;
+            background-color: rgba(0, 0, 0, 0.447);
+            width: 50%;
+            border-radius: 5%;
+            filter: blur(0px);
+            transform: scale(1.0);
+            -webkit-animation: divAnimation 2s ease-in-out;
+        }*/
         @-webkit-keyframes nameAnimation {
             0% {opacity: 0;}
             100% {opacity: 1;}
@@ -104,30 +161,65 @@
             }
         }
 
+        @-webkit-keyframes divAnimation {
+            0% {
+                filter: blur(5px);
+            }
+            100% {
+                transform: scale(1.0);
+                filter: blur(0px);
+            }
+        }
+
+        @-webkit-keyframes beforeDivAnimation {
+            0% {
+                transform: scale(0.5);
+                filter: blur(10px);
+            }
+
+            100% {
+                transform: scale(100%);
+                filter: blur(0px);
+            }
+        }
+
     </style>
     <h1 id="name">Harshdeep Kahlon</h1>
     <body id="body">
-	<h2 id="season">harshdeep.kahlon@scranton.edu</h2>
-	<h2 id="season"><a href="https://github.com/HarshdeepKahlon" id="link" target="_blank">GitHub</a></h2>
-	<h2 id="season">December 2018</h2>
+    <h2 id="season">harshdeep.kahlon@scranton.edu</h2>
+    <h2 id="season">January 2019</h2>
+
+    <div id="socialLogo">
+    <a href="https://github.com/HarshdeepKahlon" id="link" target="_blank"><img src="gitlogo.png"></a>
+    <a href="https://twitter.com/kahlonharshdeep" id="link" target="_blank"><img src="twitterlogo.png"></a>
+    </div>
     </br>
-    <h2 id="current">Currently attending: <h2 id="school">The University of Scranton</h2></h2>
-    <img id="scrantonLogo" src="scrantonLogo.png" alt="2018">
-	<h3 id="school">Freshman Year | 3.91 GPA</h3>
-	<h4 id="school">Part of the Royal Scholars and Magis STEM Honors Program</h4>
-	</br>
-    <h2 id="languages">Projects:</h2>
-    <img id="coresLogo" src="CoresLogo3.jpg" alt="2018">
-    <h3 id="school"><a  id= "link" href="http://www.buildcores.harshdeepkahlon.com/" target="_blank">BuildCores - A PC Building App for Everyone</a></h3>
-    <h4 id="description">Soon on the Apple App Store</h4>
-    <h3 id="school">Perplux</h3>
-    <h4 id="description">2019 on the Apple App Store</h4>
-	</br>
-	<h2 id="languages">Languages and experience:</h2>
+    <div class="divBackground">
+        <h2 id="current">Currently attending: <h2 id="school">The University of Scranton</h2></h2>
+        <img id="scrantonLogo" src="scrantonLogo.png" alt="2018">
+        <h3 id="school">Computer Science</h3>
+        <h3 id="school">Freshman Year | 3.93 GPA</h3>
+        <h4 id="school">Part of the Royal Scholars and Magis STEM Honors Program</h4>
+    </div>
+    </br>
+    <div class="divBackground">
+        <h2 id="languages">Projects:</h2>
+        <img id="coresLogo" src="CoresLogo3.jpg" alt="2018">
+        <h3 id="school"><a  id= "link" href="http://www.buildcores.harshdeepkahlon.com/" target="_blank">BuildCores - A PC Building App for Everyone</a></h3>
+        <h4 id="description">Soon on the Apple App Store</h4>
+        <h3 id="school">Perplux</h3>
+        <h4 id="description">2019 on the Apple App Store</h4>
+    </div>
+    </br>
+    <div class="divBackground">
+        <h2 id="languages">Languages and experience:</h2>
+        <br>
 		<h3 id="school">HTML and CSS</h3>
-		<h3 id="school">Swift 4.2</h3>
+		<h3 id="school">Swift</h3>
 		<h3 id="school">Java</h3>
-		<h3 id="school">JavaScript</h3>
+        <h3 id="school">JavaScript</h3>
+        <h3 id="school">Dart</h3>
+    </div>
     </body>
 </html>
 
